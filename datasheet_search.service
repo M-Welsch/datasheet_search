@@ -1,0 +1,10 @@
+# copy this to /etc/systemd/system
+
+[Service]
+Type=simple
+User=max
+Group=max
+ExecStart=/usr/bin/python3 /home/max/Workspaces/pycharm/browserSearch/__main__.py
+
+[Install]
+WantedBy=multi-user.target
